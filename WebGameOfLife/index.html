@@ -5,19 +5,22 @@
 
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="board.js"></script>
-    <script src="game.js"></script>
 
 </head>
 
 <body onload="createBoard();">
 
-    <h1>Play</h1>
     <div id="boxes">
 
     </div>
-    <button onclick="resetColors();">Reset</button>
+
+    <button onclick="reset();">Reset</button>
     <button onclick="simulate();">Start</button>
     <button onclick="stopSimulation();">STOP</button>
-
+    <span id="turn">0</span>
+    <br>
+    Fast 
+    <input type="range" min="1" max="10" value="5" id="threshold">
+    Slow
     
 </body>
