@@ -1,6 +1,7 @@
-var WIDTH = 120;
-var HEIGHT = 58;
-var THRESHOLD = 500;
+var BOXSIZE = 15;
+var WIDTH = Math.floor(window.innerWidth / BOXSIZE);
+var HEIGHT = Math.floor(window.innerHeight / BOXSIZE);
+
 var INTERVAL = null;
 
 var ALIVE_COLOR = "white";
